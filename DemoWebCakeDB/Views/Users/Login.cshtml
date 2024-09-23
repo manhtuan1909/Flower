@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/UsersLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-center">ĐĂNG NHẬP</h2>
+                </div>
+                <div class="card-body">
+                    @if (!string.IsNullOrEmpty(ViewBag.ThongBao))
+                    {
+                        <div class="alert alert-danger" role="alert">
+                            @ViewBag.ThongBao
+                        </div>
+                    }
+
+                    @using (Html.BeginForm("Login", "Users", FormMethod.Post, new { @class = "needs-validation", novalidate = "novalidate" }))
+                    {
+                        @Html.ValidationSummary(true)
+                        <div class="mb-3">
+                            <label for="name" class="form-label"><b>TÊN ĐĂNG NHẬP:</b></label>
+                            <input type="text" class="form-control" id="name" name="UserName" required>
+                            <div class="invalid-feedback">
+                                Vui lòng nhập tên đăng nhập.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label"><b>PASSWORD:</b></label>
+                            <input type="password" class="form-control" id="pwd" name="PassCus" required>
+                            <div class="invalid-feedback">
+                                Vui lòng nhập mật khẩu.
+                            </div>
+                        </div>
+                        <div class="mb-3 text-center">
+                            <button type="submit" class="btn btn-primary">ĐĂNG NHẬP</button>
+                        </div>
+                        <div>
+                            <p class="text-center">Nếu bạn chưa có tài khoản, hãy <a href="@Url.Action("Register", "Users")">Đăng Ký</a></p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    function showNotification() {
+        alert("Bạn đã đăng nhập thành công!");
+        window.location.href = "/Users/UserAccount";
+    }
+
+    // Chạy script hiển thị khi trang được tải
+    $(document).ready(function () {
+        @Html.Raw(ViewBag.SuccessScript)
+    });
+</script>

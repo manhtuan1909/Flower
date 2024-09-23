@@ -1,0 +1,376 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\img\\shop-page-bg.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\img\\shop-page-bg.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\img\\menu-draw.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\img\\menu-draw.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\img\\menu-left.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\img\\menu-left.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\img\\menu-draw-five.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\img\\menu-draw-five.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\img\\faq-form-right.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\img\\faq-form-right.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\img\\error-bg.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\img\\error-bg.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\img\\comming-bg.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\img\\comming-bg.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\img\\checkout-card.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\img\\checkout-card.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\images\\icon-mail-3.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\images\\icon-mail-3.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\images\\icon-shopping-cart-0.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\images\\icon-shopping-cart-0.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\images\\iconadmin.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\images\\iconadmin.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\images\\iconcart2.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\images\\iconcart2.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\images\\iconfb.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\images\\iconfb.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\images\\iconsearch.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\images\\iconsearch.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\images\\iconmail.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\images\\iconmail.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\content\\images\\iconphone.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\content\\images\\iconphone.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\demowebcakedb\\controllers\\customerproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\controllers\\customerproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\demowebcakedb\\views\\customerproducts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\views\\customerproducts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\demowebcakedb\\views\\customerproducts\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\views\\customerproducts\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "DemoWebCakeDB\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T06:37:15.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\App_Start\\FilterConfig.cs",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "DemoWebCakeDB\\App_Start\\FilterConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T06:37:12.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\App_Start\\BundleConfig.cs",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "DemoWebCakeDB\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T06:36:54.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "shop-page-bg.png",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\shop-page-bg.png",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\img\\shop-page-bg.png",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\shop-page-bg.png",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\img\\shop-page-bg.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:36:44.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "menu-draw.png",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\menu-draw.png",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\img\\menu-draw.png",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\menu-draw.png",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\img\\menu-draw.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:36:40.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "menu-left.png",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\menu-left.png",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\img\\menu-left.png",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\menu-left.png",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\img\\menu-left.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:36:37.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "menu-draw-five.png",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\menu-draw-five.png",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\img\\menu-draw-five.png",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\menu-draw-five.png",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\img\\menu-draw-five.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:36:35.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "faq-form-right.png",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\faq-form-right.png",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\img\\faq-form-right.png",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\faq-form-right.png",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\img\\faq-form-right.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:36:03.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "error-bg.jpg",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\error-bg.jpg",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\img\\error-bg.jpg",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\error-bg.jpg",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\img\\error-bg.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:36:01.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "comming-bg.jpg",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\comming-bg.jpg",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\img\\comming-bg.jpg",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\comming-bg.jpg",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\img\\comming-bg.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:36:00.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "checkout-card.png",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\checkout-card.png",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\img\\checkout-card.png",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\img\\checkout-card.png",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\img\\checkout-card.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:35:58.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "icon-mail-3.jpg",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\icon-mail-3.jpg",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\Images\\icon-mail-3.jpg",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\icon-mail-3.jpg",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\Images\\icon-mail-3.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:35:25.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "icon-shopping-cart-0.jpg",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\icon-shopping-cart-0.jpg",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\Images\\icon-shopping-cart-0.jpg",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\icon-shopping-cart-0.jpg",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\Images\\icon-shopping-cart-0.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:35:24.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "iconAdmin.png",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\iconAdmin.png",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\Images\\iconAdmin.png",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\iconAdmin.png",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\Images\\iconAdmin.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:35:23.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IconCart2.png",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\IconCart2.png",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\Images\\IconCart2.png",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\IconCart2.png",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\Images\\IconCart2.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:35:22.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "iconfb.png",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\iconfb.png",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\Images\\iconfb.png",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\iconfb.png",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\Images\\iconfb.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:35:20.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "iconSearch.jpg",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\iconSearch.jpg",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\Images\\iconSearch.jpg",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\iconSearch.jpg",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\Images\\iconSearch.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:35:19.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "iconMail.png",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\iconMail.png",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\Images\\iconMail.png",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\iconMail.png",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\Images\\iconMail.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:35:17.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "iconPhone.jpg",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\iconPhone.jpg",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Content\\Images\\iconPhone.jpg",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Content\\Images\\iconPhone.jpg",
+              "RelativeToolTip": "DemoWebCakeDB\\Content\\Images\\iconPhone.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-23T06:35:16.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CustomerProductsController.cs",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Controllers\\CustomerProductsController.cs",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Controllers\\CustomerProductsController.cs",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Controllers\\CustomerProductsController.cs",
+              "RelativeToolTip": "DemoWebCakeDB\\Controllers\\CustomerProductsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-17T20:06:57.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\CustomerProducts\\Home.cshtml",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Views\\CustomerProducts\\Home.cshtml",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\CustomerProducts\\Home.cshtml",
+              "RelativeToolTip": "DemoWebCakeDB\\Views\\CustomerProducts\\Home.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-17T19:58:04.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\CustomerProducts\\Details.cshtml",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Views\\CustomerProducts\\Details.cshtml",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\CustomerProducts\\Details.cshtml",
+              "RelativeToolTip": "DemoWebCakeDB\\Views\\CustomerProducts\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-17T19:25:17.67Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="~/Content/Images/iconAdmin.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <title>ADMIN - PAGE</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Content/mystyle.css" />
+    <link rel="stylesheet" href="~/Content/style.css" />
+    <script src="~/Scripts/script.js"></script>
+</head>
+<body>
+    <div id="div-top" style="background-color: gainsboro">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="~/Categories">
+                        CATEGORIES
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="~/Products">
+                        ADMIN
+                        PRODUCT
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="~/OrderProes">ORDER PRODUCT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="~/OrderDetails">ORDER DETAILS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="~/Products">CUSTOMER PRODUCT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="~/Vouchers">VOUCHER PRODUCT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="container-fluid body-content">
+        @RenderBody();
+    </div>
+    <div id="div-footer" style="background-color: gainsboro; text-align:center " >
+        <div class="footer_copyright">
+            <div class="container">
+                <div class="copyright_inner">
+                    <div class="float-left">
+                        <h5><a target="_blank" href="https://www.facebook.com/tuan02.07">Facebook</a></h5>
+                    </div>
+                    <div class="float-right">
+                        <a href="#" style="font-size: larger">Trần Mạnh Tuấn - 12DHTH12</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

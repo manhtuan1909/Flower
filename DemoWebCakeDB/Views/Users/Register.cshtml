@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/UsersLayout.cshtml";
+}
+
+<div style="margin: 10px auto; width: 40%;">
+    <h2 style="text-align: center; font-size: 40px; color:black;"><b>ĐĂNG KÝ THÀNH VIÊN</b></h2>
+    @using (Html.BeginForm("Register", "Users"))
+    {
+        @Html.ValidationSummary(true)
+        <div class="mb-3 mt-3">
+            <label for="name" class="form-label"><b>MÃ KHÁCH HÀNG:</b></label>
+            <input type="number" class="form-control" id="id"
+                   name="IDCus" required>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="name" class="form-label"><b>TÊN ĐĂNG NHẬP:</b></label>
+            <input type="text" class="form-control" id="name"
+                   name="UserName" required>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="name" class="form-label"><b>HỌ VÀ TÊN:</b></label>
+            <input type="text" class="form-control" id="name"
+                   name="NameCus" required>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="email" class="form-label"><b>EMAIL:</b></label>
+            <input type="email" class="form-control" id="email"
+                   name="EmailCus" required>
+        </div>
+        <div class="mb-3">
+            <label for="pwd" class="form-label"><b>PASSWORD:</b></label>
+            <input type="password" class="form-control" id="pwd"
+                   name="PassCus" required>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="phone" class="form-label"><b>SỐ ĐIỆN THOẠI:</b></label>
+            <input type="text" class="form-control" id="phone"
+                   name="PhoneCus" required>
+        </div>
+        <div style="text-align: center"><button type="submit" class="btn btn-primary">ĐĂNG KÝ</button></div>
+        <br />
+        <div>
+            <p>Nếu đã có tài khoản, xin hãy bấm vào đây @Html.ActionLink("Đăng Nhập", "Login")</p>
+        </div>
+    }
+</div>
+
+

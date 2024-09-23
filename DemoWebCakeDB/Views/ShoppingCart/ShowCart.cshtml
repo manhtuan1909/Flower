@@ -1,0 +1,386 @@
+﻿@model DemoWebCakeDB.Models.Cart
+
+@{
+    ViewBag.Title = "ShowCart";
+    Layout = "~/Views/Shared/CartLayout.cshtml";
+    string currentUrl = Request.RawUrl;
+}
+<a href="@Url.Action("Login", "Users", new { returnUrl = currentUrl })">Đăng nhập</a>
+<!--============End Main Header Area =================-->
+<section class="banner_area">
+    <div class="container">
+        <div class="banner_text">
+            <h3>Cart</h3>
+            <ul>
+                <li><a href="@Url.Action("Home", "CustomerProducts")">Home</a></li>
+                <li><a href="@Url.Action("GetCartInfo", "Cart")">Cart</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--================End Main Header Area =================-->
+<!--================Cart Table Area =================-->
+<h4 style="margin-top:25px; text-align: center"><a style="color: crimson; font-size: 22px; font-weight: bold" href="@Url.Action("Index", "CustomerProducts")"> Thêm sản phẩm</a></h4>
+@if (Model != null)
+{
+    <section class="cart_table_area p_100">
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Preview</th>
+
+                            <th scope="col">Product</th>
+                            <th scope="col">Voucher</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Items)
+                        {
+                            decimal price = item._product.Price.Value;
+                            decimal total = item._quantity * (decimal)item._product.Price.Value;
+                            <tr>
+                                <td><img src="~/Images/@item._product.ImagePro" width="120" height="132" /></td>
+
+                                <td>@Html.DisplayFor(model => item._product.NamePro)</td>
+                                <td></td>
+                                <td> @price.ToString("#,##0").Replace(',', '.')</td>
+                                <td align="right">
+                                    @using (Html.BeginForm("Update_Cart_Quantity", "ShoppingCart"))
+                                    {
+                                        <input type="hidden" value="@item._product.ProductID" name="idPro" />
+                                        <input type="number" value="@item._quantity" name="carQuantity" min="1" style="text-align:right" />
+                                        <input type="submit" value="Cập nhật" />
+                                    }
+                                </td>
+                                <td width="100" align="right">@total.ToString("#,##0").Replace(',', '.')</td>
+                                <td>
+                                    <a href="~/ShoppingCart/RemoveCart/@item._product.ProductID" style="font-size:30px; color:red;"> x </a>
+                                </td>
+                            </tr>
+
+                        }
+                        <tr>
+                            <td>
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Voucher code">
+                                    </div>
+                                    <button type="submit" class="btn">Apply Voucher</button>
+                                </form>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+
+                        <tr style="font-weight:bold; text-align:right; color:red;">
+
+                            <td scope="col" colspan="6" style="color: orangered"> Total: @Model.Total_money().ToString("#,##0").Replace(',', '.') VNĐ</td>
+                        </tr>
+                        <tr style="margin: 10px auto; width: 30%;">
+                            <td colspan="7" style="text-align: center; font-size:40px; color: black">
+                                <br />
+                                <h4>THÔNG TIN KHÁCH HÀNG</h4>
+                                <h6>(Hãy đăng nhập trước khi thanh toán)</h6>
+                                @using (Html.BeginForm("CheckOut", "ShoppingCart"))
+                                {
+                                    <table style="border-collapse:separate; border-spacing:5px;text-align:center; margin-left:330px;">
+                                        <tr>
+                                            <td></td>
+                                            <td><input type="hidden" name="CodeCustomer" value="@Session["IDCus"]" required /></td>
+                                        </tr>
+                                        <tr>
+                                            <td> Khách hàng : </td>
+                                            <td><input type="text" name="NameCustomer" value="@Session["NameCus"]" required /></td>
+                                        </tr>
+                                        <tr>
+                                            <td> Điên thoại : </td>
+                                            <td><input type="text" name="PhoneCustomer" value="@Session["PhoneCus"]" required /></td>
+                                        </tr>
+                                        <tr>
+                                            <td> Địa chỉ giao hàng : </td>
+                                            <td> <input type="text" name="AddressDeliverry" required /></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <a href="@Url.Action("Login", "Users")" class="btn btn-primary">Đăng nhập</a>
+
+                                                <input type="submit" value="Thanh toán" class="btn btn-danger" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                }
+                            </td>
+
+                        </tr>
+
+                    </tfoot>
+                </table>
+            </div>
+
+        </div>
+    </section>
+}
+else
+{
+    <h4 style="text-align:center">Giỏ hàng rỗng ! Xin mời tiếp tục mua hàng</h4>
+}
+<!--================End Cart Table Area =================-->
+
+<style>
+    .cart_table_area .table-responsive .table {
+        border: 1px solid #ebebeb;
+        margin-bottom: 50px;
+    }
+
+        .cart_table_area .table-responsive .table thead {
+            background: #f9f9f9;
+        }
+
+            .cart_table_area .table-responsive .table thead tr th {
+                border: 1px solid #ebebeb;
+                line-height: 56px;
+                padding: 0px;
+                color: #3e606b;
+                font-family: "Playfair Display", serif;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+                .cart_table_area .table-responsive .table thead tr th:first-child {
+                    width: 246px;
+                    padding: 0px 35px;
+                }
+
+                .cart_table_area .table-responsive .table thead tr th:nth-child(2) {
+                    width: 214px;
+                    padding: 0px 20px;
+                }
+
+                .cart_table_area .table-responsive .table thead tr th:nth-child(3) {
+                    width: 145px;
+                    padding: 0px 20px;
+                }
+
+                .cart_table_area .table-responsive .table thead tr th:nth-child(4) {
+                    width: 230px;
+                    padding: 0px 20px;
+                }
+
+                .cart_table_area .table-responsive .table thead tr th:nth-child(5) {
+                    width: 196px;
+                    padding: 0px 20px;
+                }
+
+        .cart_table_area .table-responsive .table tbody tr {
+            border-bottom: 1px solid #ebebeb;
+        }
+
+            .cart_table_area .table-responsive .table tbody tr td {
+                padding: 25px 25px;
+                border-right: 1px solid #ebebeb;
+                vertical-align: middle;
+                -ms-flex-item-align: center;
+                align-self: center;
+                font-size: 16px;
+                font-family: "Open Sans", sans-serif;
+                color: #797979;
+            }
+
+                .cart_table_area .table-responsive .table tbody tr td .product_select {
+                    width: 96px;
+                    border-radius: 0px;
+                    padding: 0px;
+                    height: 42px;
+                    border: 1px solid #ebebeb;
+                    text-align: center;
+                    padding-left: 22px;
+                }
+
+                    .cart_table_area .table-responsive .table tbody tr td .product_select:after {
+                        content: "\f0d7";
+                        font: normal normal normal 14px/1 FontAwesome;
+                        border: none;
+                        -webkit-transform: rotate(0);
+                        -ms-transform: rotate(0);
+                        transform: rotate(0);
+                        margin-top: -7px;
+                        right: 16px;
+                    }
+
+                    .cart_table_area .table-responsive .table tbody tr td .product_select:before {
+                        content: "";
+                        height: 100%;
+                        width: 1px;
+                        background: #ebebeb;
+                        right: 36px;
+                        position: absolute;
+                        top: 0px;
+                    }
+
+                .cart_table_area .table-responsive .table tbody tr td:first-child {
+                    text-align: center;
+                }
+
+                .cart_table_area .table-responsive .table tbody tr td:nth-child(5) {
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+
+                .cart_table_area .table-responsive .table tbody tr td:last-child {
+                    text-align: center;
+                    color: #242424;
+                    font-size: 18px;
+                }
+
+            .cart_table_area .table-responsive .table tbody tr:last-child {
+                background: #f9f9f9;
+            }
+
+                .cart_table_area .table-responsive .table tbody tr:last-child td {
+                    border: none;
+                }
+
+                    .cart_table_area .table-responsive .table tbody tr:last-child td .form-inline {
+                        margin-right: -150px;
+                        padding-left: 20px;
+                    }
+
+                        .cart_table_area .table-responsive .table tbody tr:last-child td .form-inline .form-group input {
+                            width: 130px;
+                            border: 1px solid #dddddd;
+                            border-radius: 3px;
+                            height: 33px;
+                            font-size: 15px;
+                            font-family: "Open Sans", sans-serif;
+                            color: #8e8d8d;
+                        }
+
+                            .cart_table_area .table-responsive .table tbody tr:last-child td .form-inline .form-group input.placeholder {
+                                font-size: 15px;
+                                font-family: "Open Sans", sans-serif;
+                                color: #8e8d8d;
+                            }
+
+                            .cart_table_area .table-responsive .table tbody tr:last-child td .form-inline .form-group input:-moz-placeholder {
+                                font-size: 15px;
+                                font-family: "Open Sans", sans-serif;
+                                color: #8e8d8d;
+                            }
+
+                            .cart_table_area .table-responsive .table tbody tr:last-child td .form-inline .form-group input::-moz-placeholder {
+                                font-size: 15px;
+                                font-family: "Open Sans", sans-serif;
+                                color: #8e8d8d;
+                            }
+
+                            .cart_table_area .table-responsive .table tbody tr:last-child td .form-inline .form-group input::-webkit-input-placeholder {
+                                font-size: 15px;
+                                font-family: "Open Sans", sans-serif;
+                                color: #8e8d8d;
+                            }
+
+                        .cart_table_area .table-responsive .table tbody tr:last-child td .form-inline .btn {
+                            width: 140px;
+                            border-radius: 3px;
+                            background: #242424;
+                            color: #fff;
+                            height: 31px;
+                            line-height: 26px;
+                            padding: 0px;
+                            margin-left: 143px;
+                            margin-top: -32px;
+                            border: none;
+                            outline: none !important;
+                            -webkit-box-shadow: none !important;
+                            box-shadow: none !important;
+                        }
+
+                    .cart_table_area .table-responsive .table tbody tr:last-child td .pest_btn {
+                        margin-left: -80px;
+                        margin-right: 15px;
+                        line-height: 42px;
+                        padding: 0px 30px;
+                    }
+</style>
+<style>
+    /* Banner Area css
+    ============================================================================================ */
+    .banner_area {
+        background: url(/Content/img/banner/banner-bg.jpg) no-repeat scroll center center;
+        background-size: cover;
+    }
+
+    .banner_text {
+        text-align: center;
+        padding-bottom: 80px;
+    }
+
+        .banner_text h3 {
+            color: #fff;
+            padding-top: 113px;
+            font-family: "Playfair Display", serif;
+            font-weight: bold;
+            font-size: 62px;
+        }
+
+        .banner_text ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+            .banner_text ul li {
+                display: inline-block;
+                margin-right: 20px;
+            }
+
+                .banner_text ul li a {
+                    display: inline-block;
+                    color: #fff;
+                    font-size: 14px;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: 600;
+                    position: relative;
+                    letter-spacing: .28px;
+                }
+
+                    .banner_text ul li a:before {
+                        content: "\f105";
+                        font: normal normal normal 14px/1 FontAwesome;
+                        position: absolute;
+                        top: 50%;
+                        -webkit-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                        left: -15px;
+                    }
+
+                .banner_text ul li:first-child a {
+                    color: #f195b2;
+                }
+
+                    .banner_text ul li:first-child a:before {
+                        display: none;
+                    }
+
+                .banner_text ul li:last-child {
+                    margin-right: 0px;
+                }
+
+    /* End Banner Area css
+    ============================================================================================ */
+</style>
+

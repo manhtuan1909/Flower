@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLHOAModelStoreContainer" CdmEntityContainer="QLHOAEntities">
+    <EntitySetMapping Name="AdminUsers">
+      <EntityTypeMapping TypeName="QLHOAModel.AdminUser">
+        <MappingFragment StoreEntitySet="AdminUsers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NameUser" ColumnName="NameUser" />
+          <ScalarProperty Name="RoleUser" ColumnName="RoleUser" />
+          <ScalarProperty Name="PasswordUser" ColumnName="PasswordUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="QLHOAModel.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IDCate" ColumnName="IDCate" />
+          <ScalarProperty Name="NameCate" ColumnName="NameCate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="QLHOAModel.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="IDCus" ColumnName="IDCus" />
+          <ScalarProperty Name="NameCus" ColumnName="NameCus" />
+          <ScalarProperty Name="PhoneCus" ColumnName="PhoneCus" />
+          <ScalarProperty Name="EmailCus" ColumnName="EmailCus" />
+          <ScalarProperty Name="PassCus" ColumnName="PassCus" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDetails">
+      <EntityTypeMapping TypeName="QLHOAModel.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDProduct" ColumnName="IDProduct" />
+          <ScalarProperty Name="IDOrder" ColumnName="IDOrder" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderPros">
+      <EntityTypeMapping TypeName="QLHOAModel.OrderPro">
+        <MappingFragment StoreEntitySet="OrderPros">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DateOrder" ColumnName="DateOrder" />
+          <ScalarProperty Name="IDCus" ColumnName="IDCus" />
+          <ScalarProperty Name="AddressDelivery" ColumnName="AddressDelivery" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="QLHOAModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="NamePro" ColumnName="NamePro" />
+          <ScalarProperty Name="DecriptionPro" ColumnName="DecriptionPro" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ImagePro" ColumnName="ImagePro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vouchers">
+      <EntityTypeMapping TypeName="QLHOAModel.Voucher">
+        <MappingFragment StoreEntitySet="Vouchers">
+          <ScalarProperty Name="VoucherID" ColumnName="VoucherID" />
+          <ScalarProperty Name="IDProduct" ColumnName="IDProduct" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionName="QLHOAModel.Store.GetCustomerByUsername" FunctionImportName="GetCustomerByUsername">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLHOAModel.GetCustomerByUsername_Result">
+          <ScalarProperty Name="IDCus" ColumnName="IDCus" />
+          <ScalarProperty Name="NameCus" ColumnName="NameCus" />
+          <ScalarProperty Name="PhoneCus" ColumnName="PhoneCus" />
+          <ScalarProperty Name="EmailCus" ColumnName="EmailCus" />
+          <ScalarProperty Name="PassCus" ColumnName="PassCus" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AddCategoryProcedure" FunctionName="QLHOAModel.Store.AddCategoryProcedure" />
+    <FunctionImportMapping FunctionImportName="AddProductProcedure" FunctionName="QLHOAModel.Store.AddProductProcedure" />
+    <FunctionImportMapping FunctionImportName="CalculateOrderTotalProcedure" FunctionName="QLHOAModel.Store.CalculateOrderTotalProcedure" />
+    <FunctionImportMapping FunctionImportName="DeleteCategoryProcedure" FunctionName="QLHOAModel.Store.DeleteCategoryProcedure" />
+    <FunctionImportMapping FunctionImportName="DeleteProductProcedure" FunctionName="QLHOAModel.Store.DeleteProductProcedure" />
+    <FunctionImportMapping FunctionImportName="GetCategoryCountProcedure" FunctionName="QLHOAModel.Store.GetCategoryCountProcedure" />
+    <FunctionImportMapping FunctionImportName="GetCategoryNameByIdProcedure" FunctionName="QLHOAModel.Store.GetCategoryNameByIdProcedure" />
+    <FunctionImportMapping FunctionImportName="GetCustomerByUsernameProcedure" FunctionName="QLHOAModel.Store.GetCustomerByUsernameProcedure">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLHOAModel.GetCustomerByUsernameProcedure_Result">
+          <ScalarProperty Name="IDCus" ColumnName="IDCus" />
+          <ScalarProperty Name="NameCus" ColumnName="NameCus" />
+          <ScalarProperty Name="PhoneCus" ColumnName="PhoneCus" />
+          <ScalarProperty Name="EmailCus" ColumnName="EmailCus" />
+          <ScalarProperty Name="PassCus" ColumnName="PassCus" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetOrderCountByCustomerIdProcedure" FunctionName="QLHOAModel.Store.GetOrderCountByCustomerIdProcedure" />
+    <FunctionImportMapping FunctionImportName="GetProductCountByCategoryProcedure" FunctionName="QLHOAModel.Store.GetProductCountByCategoryProcedure" />
+    <FunctionImportMapping FunctionImportName="GetProductPriceByIdProcedure" FunctionName="QLHOAModel.Store.GetProductPriceByIdProcedure" />
+    <FunctionImportMapping FunctionImportName="GetVoucherValueByProductIdProcedure" FunctionName="QLHOAModel.Store.GetVoucherValueByProductIdProcedure" />
+    <FunctionImportMapping FunctionImportName="UpdateCategoryProcedure" FunctionName="QLHOAModel.Store.UpdateCategoryProcedure" />
+    <FunctionImportMapping FunctionImportName="UpdateProductProcedure" FunctionName="QLHOAModel.Store.UpdateProductProcedure" />
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,16 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.rev_slider {
+    position: relative;
+    overflow: visible;
+}
+.rev_slider img,.tp-simpleresponsive img {
+    max-width: none!important;
+    transition: none;
+    margin: 0;
+    padding: 0;
+    border: none
+}

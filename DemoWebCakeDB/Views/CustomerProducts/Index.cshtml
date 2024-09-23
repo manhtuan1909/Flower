@@ -1,0 +1,562 @@
+﻿@using System.Web.Mvc.Html;
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MenuLayout.cshtml";
+    <!-- Icon css link -->
+    <link href="~/Content/font-awesome.vc.min.css" rel="stylesheet">
+}
+<!--================End Main Header Area =================-->
+<style>
+    table {
+        width: 100%;
+    }
+
+    tr > td {
+        display: inline-block;
+        margin-right: 10px; /* Khoảng cách giữa các ô */
+    }
+</style>
+<section class="banner_area">
+    <div class="container">
+        <div class="banner_text">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="@Url.Action("Home", "CustomerProducts")">Home</a></li>
+                <li><a href="@Url.Action("Index", "CustomerProducts")">Menu</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--================Product Area =================-->
+<section class="product_area p_100">
+    <div class="container">
+        <div class="row product_inner_row">
+            <div class="col-lg-9">
+                <div class="row m0 product_task_bar">
+                    <div class="product_task_inner">
+                        <div class="float-left">
+
+                        </div>
+                        <div class="float-right">
+
+                            <select class="short"></select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Đoạn thêm -->
+                @using (Html.BeginForm("Index", "CustomerProducts", FormMethod.Get))
+                {
+                    <table>
+                        <tr>
+                            <td>
+                                Tên Sản phẩm : <input type="text" name="SearchString" />
+                                <input type="submit" value="Tìm kiếm" class="btn btn-warning" />
+                            </td>
+                            <td>
+                                Đơn giá từ : <input type="number" name="min" />
+                                Đến : <input type="number" name="max" />
+                                <input type="submit" value="Tìm giá" class="btn btn-info" />
+                            </td>
+
+                        </tr>
+                    </table>
+
+                }
+                <!--Kết thúc -->
+
+                <div class="row product_item_inner">
+                    @foreach (var sanpham in Model)
+                    {
+                        <div class="col-lg-3 col-md-4 col-6" style="margin-top:20px;">
+                            <div class="cake_feature_item">
+                                <div class="cake_img">
+                                    <img src="~/Images/@sanpham.ImagePro" alt="" style="height:210px; width:auto;">
+                                </div>
+                                <div class="cake_text">
+                                    <h4>@sanpham.Price</h4>
+                                    <h3>@sanpham.NamePro</h3>
+                                    <!-- Thêm đoạn mã dưới để tạo liên kết đến action "ProductDetail" và truyền tham số Masp -->
+                                    <button class="btn btn-info">
+                                        <a href="@Url.Action("Details", "CustomerProducts", new { id = @sanpham.ProductID })">Details</a>
+                                    </button>
+                                    <button class="add-to-cart pest_btn" data-product-id="@sanpham.ProductID">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <!-- Thêm đoạn mã để hiển thị số trang và số trang hiện tại -->
+                @*<p>Trang @(Model.PageNumber) / @Model.PageCount</p>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptions.MinimalWithItemCountText)*@
+                <!-- Kết thúc -->
+
+
+                <div class="product_pagination">
+                    <div class="left_btn"><a href="#"><i class="lnr lnr-arrow-left"></i> Old </a></div>
+                    <div class="middle_list">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="right_btn"><a href="#">New <i class="lnr lnr-arrow-right"></i></a></div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="product_left_sidebar">
+                    <aside class="left_sidebar search_widget">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter Search Keywords">
+                            <div class="input-group-append">
+                                <button class="btn" type="button"><i class="fa fa-search "></i></button>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside class="left_sidebar p_catgories_widget">
+                        <div class="p_w_title">
+                            <h3>Product Categories</h3>
+                        </div>
+                        <ul class="list_style">
+                            <li><a>@Html.Action("GetProductsByCategory", "CustomerProducts")</a></li>
+                            <li><a href="@Url.Action("Index", "CustomerProducts")">All Products</a></li>
+                        </ul>
+                    </aside>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Product Area =================-->
+<style>
+    .cake_feature_item {
+        background: #fff;
+        overflow: hidden;
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(40, 40, 40, 0.08);
+        box-shadow: 0px 0px 15px 0px rgba(40, 40, 40, 0.08);
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+        .cake_feature_item .cake_img {
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+            .cake_feature_item .cake_img img {
+                -webkit-transition: all 300ms ease;
+                -o-transition: all 300ms ease;
+                transition: all 300ms ease;
+            }
+
+            .cake_feature_item .cake_img:before {
+                content: "";
+                background: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                -webkit-transition: all 300ms ease;
+                -o-transition: all 300ms ease;
+                transition: all 300ms ease;
+                z-index: 1;
+                opacity: 0;
+            }
+
+            .cake_feature_item .cake_img:hover img {
+                -webkit-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+
+            .cake_feature_item .cake_img:hover:before {
+                opacity: 1;
+            }
+
+        .cake_feature_item .cake_text {
+            position: relative;
+        }
+
+            .cake_feature_item .cake_text h4 {
+                width: 120px;
+                height: 70px;
+                border-radius: 50%;
+                color: #343434;
+                font-size: 22px;
+                font-family: "Playfair Display", serif;
+                font-style: italic;
+                background: #fff;
+                display: inline-block;
+                position: absolute;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+                top: -35px;
+                line-height: 68px;
+                margin-bottom: 0px;
+                z-index: 2;
+            }
+
+            .cake_feature_item .cake_text h3 {
+                font-size: 20px;
+                color: #343434;
+                font-family: "Playfair Display", serif;
+                margin-bottom: 22px;
+                padding-top: 35px;
+            }
+
+    .cake_feature_main {
+        background: #fff;
+        position: relative;
+    }
+
+        .cake_feature_main .cake_feature_row {
+            margin-bottom: -50px;
+        }
+
+            .cake_feature_main .cake_feature_row .cake_feature_item {
+                margin-bottom: 50px;
+            }
+
+    .pink_cake_feature {
+        background: #f195b2;
+    }
+
+        .pink_cake_feature:before {
+            display: none;
+        }
+
+        .pink_cake_feature:after {
+            display: none;
+        }
+
+        .pink_cake_feature .cake_feature_inner {
+            position: relative;
+        }
+
+            .pink_cake_feature .cake_feature_inner .title_view_all {
+                overflow: hidden;
+            }
+
+                .pink_cake_feature .cake_feature_inner .title_view_all .float-right .pest_btn {
+                    line-height: 46px;
+                    background: #fff;
+                    color: #797979;
+                    font-size: 14px;
+                    font-family: "Open Sans", sans-serif;
+                    -webkit-transition: all 400ms linear 0s;
+                    -o-transition: all 400ms linear 0s;
+                    transition: all 400ms linear 0s;
+                    margin-top: 25px;
+                }
+
+                    .pink_cake_feature .cake_feature_inner .title_view_all .float-right .pest_btn:before {
+                        background: #f195b2;
+                    }
+
+                    .pink_cake_feature .cake_feature_inner .title_view_all .float-right .pest_btn:hover {
+                        color: #f195b2;
+                    }
+
+            .pink_cake_feature .cake_feature_inner .cake_feature_slider {
+                position: relative;
+            }
+
+                .pink_cake_feature .cake_feature_inner .cake_feature_slider .cake_feature_slider {
+                    position: relative;
+                    left: 0px;
+                    top: 0px;
+                    text-align: center;
+                    margin-top: 50px;
+                }
+
+                    .pink_cake_feature .cake_feature_inner .cake_feature_slider .cake_feature_slider .owl-prev, .pink_cake_feature .cake_feature_inner .cake_feature_slider .cake_feature_slider .owl-next {
+                        border-color: #fff;
+                        color: #fff;
+                    }
+
+    .cake_feature_four {
+        background: #f5f5f5;
+    }
+
+        .cake_feature_four .cake_feature_slider .cake_feature_slider {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            text-align: center;
+            margin-top: 45px;
+        }
+
+    .our_cakes_area .cake_feature_row .cake_feature_item {
+        margin-bottom: 30px;
+    }
+
+    .our_cakes_area .main_title h5 {
+        font-style: normal;
+    }
+
+    .pest_btn {
+        background: #94c9d9;
+        color: #fff;
+        line-height: 36px;
+        display: inline-block;
+        padding: 0px 25px;
+        font-family: "Open Sans", sans-serif;
+        position: relative;
+        overflow: hidden;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 3px;
+    }
+
+        .pest_btn:before {
+            background: #fff;
+            content: "";
+            height: 155px;
+            left: -75px;
+            opacity: .2;
+            position: absolute;
+            top: -50px;
+            -webkit-transform: rotate(35deg);
+            -ms-transform: rotate(35deg);
+            transform: rotate(35deg);
+            -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+            -o-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+            width: 50px;
+        }
+
+        .pest_btn:hover {
+            color: #fff;
+        }
+
+            .pest_btn:hover:before {
+                left: 120%;
+                -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                -o-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+            }
+</style>
+
+<style>
+    /* Banner Area css
+        ============================================================================================ */
+    .banner_area {
+        background: url(/Images/colorful-flowers-uhd-4k-wallpaper.jpg) no-repeat scroll center center;
+        background-size: cover;
+    }
+
+    .banner_text {
+        text-align: center;
+        padding-bottom: 80px;
+    }
+
+        .banner_text h3 {
+            color: #fff;
+            padding-top: 113px;
+            font-family: "Playfair Display", serif;
+            font-weight: bold;
+            font-size: 62px;
+        }
+
+        .banner_text ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+            .banner_text ul li {
+                display: inline-block;
+                margin-right: 20px;
+            }
+
+                .banner_text ul li a {
+                    display: inline-block;
+                    color: #fff;
+                    font-size: 14px;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: 600;
+                    position: relative;
+                    letter-spacing: .28px;
+                }
+
+                    .banner_text ul li a:before {
+                        content: "\f105";
+                        font: normal normal normal 14px/1 FontAwesome;
+                        position: absolute;
+                        top: 50%;
+                        -webkit-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                        left: -15px;
+                    }
+
+                .banner_text ul li:first-child a {
+                    color: #f195b2;
+                }
+
+                    .banner_text ul li:first-child a:before {
+                        display: none;
+                    }
+
+                .banner_text ul li:last-child {
+                    margin-right: 0px;
+                }
+
+    /* End Banner Area css
+        ============================================================================================ */
+</style>
+
+<style>
+    .search_widget .input-group {
+        display: block;
+    }
+
+        .search_widget .input-group input {
+            width: 100%;
+            border-radius: 0px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            height: 52px;
+            font-size: 15px;
+            color: #7a7a7a;
+            font-family: "Open Sans", sans-serif;
+            border: 1px solid #d3d3d3;
+        }
+
+            .search_widget .input-group input.placeholder {
+                font-size: 15px;
+                color: #7a7a7a;
+                font-family: "Open Sans", sans-serif;
+            }
+
+            .search_widget .input-group input:-moz-placeholder {
+                font-size: 15px;
+                color: #7a7a7a;
+                font-family: "Open Sans", sans-serif;
+            }
+
+            .search_widget .input-group input::-moz-placeholder {
+                font-size: 15px;
+                color: #7a7a7a;
+                font-family: "Open Sans", sans-serif;
+            }
+
+            .search_widget .input-group input::-webkit-input-placeholder {
+                font-size: 15px;
+                color: #7a7a7a;
+                font-family: "Open Sans", sans-serif;
+            }
+
+        .search_widget .input-group .input-group-append {
+            position: absolute;
+            right: 12px;
+            top: 51%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            z-index: 5;
+        }
+
+            .search_widget .input-group .input-group-append .btn {
+                padding: 0px;
+                margin-left: 0px;
+                background: transparent;
+                outline: none !important;
+                -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+            }
+
+                .search_widget .input-group .input-group-append .btn i {
+                    font-size: 16px;
+                    color: #414141;
+                }
+</style>
+
+<style>
+    p_price_widget .filter_price {
+        position: relative;
+    }
+
+    .p_price_widget .filter_price .ui-slider {
+        border: none;
+        background: #d1d1d1;
+        border-radius: 0px;
+        height: 6px;
+        margin-bottom: 18px;
+    }
+
+        .p_price_widget .filter_price .ui-slider .ui-slider-range {
+            background: #3e606b;
+        }
+
+        .p_price_widget .filter_price .ui-slider .ui-slider-handle {
+            width: 7px;
+            height: 24px;
+            background: #d1d1d1;
+            border-radius: 0px;
+            border: none;
+            margin-left: -5px;
+            top: -10px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            cursor: pointer;
+        }
+
+    .p_price_widget .filter_price label {
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        color: #797979;
+    }
+
+    .p_price_widget .filter_price input {
+        background: transparent;
+        border-radius: 0px;
+        border: none;
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        color: #797979;
+    }
+
+    .p_price_widget .filter_price a {
+        position: absolute;
+        right: 0px;
+        font-size: 14px;
+        color: #3e606b;
+        font-family: "Open Sans", sans-serif;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".add-to-cart").on("click", function () {
+            var productId = $(this).data("product-id");
+
+            // Gửi yêu cầu AJAX đến phương thức AddToCart
+            $.ajax({
+                type: "POST",
+                url: "/ShoppingCart/AddToCart",
+                data: { id: productId },
+                success: function (data) {
+                    // Xử lý dữ liệu trả về nếu cần
+                    console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                },
+                error: function () {
+                    console.log("Đã xảy ra lỗi khi thêm vào giỏ hàng.");
+                }
+            });
+        });
+    });
+</script>

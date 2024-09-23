@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\views\\shared\\menulayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\views\\shared\\menulayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\views\\shared\\homelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\views\\shared\\homelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\views\\shared\\cartlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\views\\shared\\cartlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\views\\shared\\_masterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\views\\shared\\_masterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|d:\\project by tuan\\demowebcakedb\\demowebcakedb\\demowebcakedb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\demowebcakedb\\views\\customerproducts\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55294039-EDD0-45E3-B0BE-27619BB79171}|DemoWebCakeDB\\DemoWebCakeDB.csproj|solutionrelative:demowebcakedb\\views\\customerproducts\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenuLayout.cshtml",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\Shared\\MenuLayout.cshtml",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Views\\Shared\\MenuLayout.cshtml",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\Shared\\MenuLayout.cshtml",
+              "RelativeToolTip": "DemoWebCakeDB\\Views\\Shared\\MenuLayout.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:45:51.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeLayout.cshtml",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\Shared\\HomeLayout.cshtml",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Views\\Shared\\HomeLayout.cshtml",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\Shared\\HomeLayout.cshtml",
+              "RelativeToolTip": "DemoWebCakeDB\\Views\\Shared\\HomeLayout.cshtml",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAAANcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:44:15.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartLayout.cshtml",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\Shared\\CartLayout.cshtml",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Views\\Shared\\CartLayout.cshtml",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\Shared\\CartLayout.cshtml",
+              "RelativeToolTip": "DemoWebCakeDB\\Views\\Shared\\CartLayout.cshtml",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAFcAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:41:30.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_MasterLayout.cshtml",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\Shared\\_MasterLayout.cshtml",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Views\\Shared\\_MasterLayout.cshtml",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\Shared\\_MasterLayout.cshtml",
+              "RelativeToolTip": "DemoWebCakeDB\\Views\\Shared\\_MasterLayout.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADwAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:40:29.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DemoWebCakeDB\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:39:55.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "DemoWebCakeDB\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:39:51.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "DemoWebCakeDB\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:39:41.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\CustomerProducts\\Home.cshtml",
+              "RelativeDocumentMoniker": "DemoWebCakeDB\\Views\\CustomerProducts\\Home.cshtml",
+              "ToolTip": "D:\\Project by Tuan\\DemoWebCakeDB\\DemoWebCakeDB\\DemoWebCakeDB\\Views\\CustomerProducts\\Home.cshtml",
+              "RelativeToolTip": "DemoWebCakeDB\\Views\\CustomerProducts\\Home.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-17T19:58:04.676Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

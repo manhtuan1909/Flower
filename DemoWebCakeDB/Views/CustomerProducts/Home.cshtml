@@ -1,0 +1,28 @@
+﻿@model List<DemoWebCakeDB.Models.Product>
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/HomeLayout.cshtml";
+}
+
+<div class="cake_feature_row row">
+    @foreach (var product in Model)
+    {
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="cake_feature_item">
+                <div class="cake_img">
+                    <img src="~/Images/@product.ImagePro" alt="" style="height:210px; width:auto;">
+                </div>
+                <div class="cake_text">
+                    <h4>@product.Price</h4>
+                    <h3>@product.NamePro</h3>
+                    <!-- Nút "Thêm vào giỏ hàng" -->
+                    @using (Html.BeginForm("AddToCart", "Cart", new { id = product.ProductID }, FormMethod.Post))
+                    { 
+                        <button type="submit" class="pest_btn">Thêm vào giỏ hàng</button> 
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>

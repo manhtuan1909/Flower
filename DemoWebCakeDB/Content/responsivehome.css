@@ -1,0 +1,35 @@
+@media (min-width: 767px)
+{
+.top_header_area .float-left {
+    float: left !important;
+    text-align: center;
+}
+.top_header_area .float-right {
+    float: right !important;
+    text-align: center;
+}
+.main_header_area + div, .main_header_area + .row {
+    margin-top: 157px;
+}
+.main_header_area + section
+{
+    margin-top: 50px;
+}
+.copyright_inner .float-left {
+    float: left!important;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.footer_copyright .copyright_inner .float-left h5 {
+    line-height: 24px;
+}
+.copyright_inner .float-right {
+    float: right !important;
+    text-align: center;
+}
+.footer_copyright .copyright_inner .float-right a {
+    color: #f195b2;
+    font-family: "Open Sans", sans-serif;
+}
+}
+  

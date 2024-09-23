@@ -1,0 +1,106 @@
+﻿@model DemoWebCakeDB.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<style>
+    #div-ds {
+        text-align: center;
+        background-color: royalblue;
+        height: 50px;
+        border-radius: 20px 20px 0 0;
+        padding-top: 10px;
+        color: white;
+    }
+
+    .product-details {
+        margin: 20px auto;
+        width: 70%;
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+        .product-details hr {
+            margin: 20px 0;
+        }
+
+    .product-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .btn-container {
+        margin-top: 20px;
+    }
+</style>
+
+<div class="product-details">
+    <h2 id="div-ds">CHI TIẾT SẢN PHẨM</h2>
+    <div>
+        <hr />
+
+        <dl class="row">
+            <dt class="col-sm-3 text-info">
+                TÊN SẢN PHẨM:
+            </dt>
+            <dd class="col-sm-9">
+                <strong>@Html.DisplayFor(model => model.NamePro)</strong>
+            </dd>
+
+            <dt class="col-sm-3 text-info">
+                MÔ TẢ:
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.DecriptionPro)
+            </dd>
+
+            <dt class="col-sm-3 text-info">
+                GIÁ:
+            </dt>
+            <dd class="col-sm-9">
+                <strong>@Html.DisplayFor(model => model.Price) VNĐ</strong>
+            </dd>
+
+            <dt class="col-sm-3 text-info">
+                NHÓM SẢN PHẨM:
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Category.NameCate)
+            </dd>
+
+            <dt class="col-sm-3 text-info">
+                HÌNH MINH HỌA:
+            </dt>
+            <dd class="col-sm-9">
+                <img src="~/Images/@Model.ImagePro" class="product-image" alt="Hình minh họa" />
+            </dd>
+        </dl>
+
+    </div>
+    <div class="shop-introduction">
+        <h3>Giới Thiệu Về Chúng Tôi</h3>
+        <p>
+            Chào mừng bạn đến với cửa hàng hoa chúng tôi! Chúng tôi tự hào cung cấp những sản phẩm chất lượng cao và dịch vụ tận tâm đến từng chi tiết.
+        </p>
+    </div>
+    <div class="social-media">
+        <h3>Kết Nối Với Chúng Tôi</h3>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/tuan02.07" target="_blank">
+                <img src="path/to/facebook-icon.png" alt="Facebook" class="social-icon" />
+            </a>
+            <a href="https://www.instagram.com/tuan.tran.1909/" target="_blank">
+                <img src="path/to/instagram-icon.png" alt="Instagram" class="social-icon" />
+            </a>
+        </div>
+    </div>
+
+
+    <div class="btn-container">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ProductID }, new { @class = "btn btn-success" }) |
+        @Html.ActionLink("Back to List", "Index", new { @class = "btn btn-default" })
+    </div>
+</div>

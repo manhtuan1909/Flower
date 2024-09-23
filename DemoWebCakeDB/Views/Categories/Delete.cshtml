@@ -1,0 +1,47 @@
+﻿@model DemoWebCakeDB.Models.Category
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<style>
+    #div-ds {
+        text-align: center;
+        background-color: red;
+        height: 50px;
+        border-radius: 20px 20px 0 0;
+    }
+</style>
+<div style="margin: 10px auto; width: 70%;">
+    <h2 id="div-ds" style="padding-top: 10px; color: white;">
+        BẠN CÓ CHẮC CHẮN MUỐN XÓA CATEGORY
+        NÀY?
+        </h2>
+        <div>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    MÃ CATEGORY
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.IDCate)
+                </dd>
+                <dt>
+                    TÊN CATEGORY
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.NameCate)
+                </dd>
+            </dl>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(model => model.CategoryId)
+                <div class="form-actions no-color">
+                    <input type="submit" value="XÓA" class="btn btn-danger" /> |
+                    @Html.ActionLink("TRỞ LẠI", "Index")
+                </div>
+            }
+        </div>
+</div>

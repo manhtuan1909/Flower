@@ -1,0 +1,65 @@
+﻿@model DemoWebCakeDB.Models.Product
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<style>
+    #div-ds {
+        text-align: center;
+        background-color: red;
+        height: 50px;
+        border-radius: 20px 20px 0 0;
+    }
+</style>
+<div style="margin: 10px auto; width: 70%;">
+    <h2 id="div-ds" style="padding-top: 10px; color: white;">BẠN CÓ CHẮC CHẮN MUỐN XÓA SẢN PHẨM NÀY?</h2>
+        <div>
+            <br />
+            <dl class="dl-horizontal">
+                <dt>
+                    TÊN SẢN PHẨM:
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.NamePro)
+                </dd>
+                <br />
+                <dt>
+                    MÔ TẢ:
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.DecriptionPro)
+                </dd>
+                <br />
+                <dt>
+                    GIÁ:
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Price) VNĐ
+                </dd>
+                <br />
+                <dt>
+                    NHÓM SẢN PHẨM:
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Category.NameCate)
+                </dd>
+                <br />
+                <dt>
+                    HÌNH MINH HỌA:
+                </dt>
+                <dd>
+                    <img src="~/Images/@Model.ImagePro" style="height:350px; width:350px;" />
+                </dd>
+            </dl>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-danger" /> |
+            @Html.ActionLink("BackToList", "Index", new { @class = "btn btn-default" })
+        </div>
+            }
+        </div>
+</div>

@@ -1,0 +1,45 @@
+﻿@model DemoWebCakeDB.Models.AdminUser
+
+@{
+    ViewBag.Title = "RegisterAdmin";
+    Layout = "~/Views/Shared/UsersLayout.cshtml";
+}
+
+<div style="margin: 10px auto; width: 40%;">
+    <h2 style="text-align: center; font-size: 40px; color:black;"><b>ĐĂNG KÝ ADMIN</b></h2>
+    @using (Html.BeginForm("RegisterAdmin", "LoginAdmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        <p>@Html.LabelFor(model => model.ID)</p>
+        <p>@Html.EditorFor(model => model.ID)</p>
+        <p>@Html.ValidationMessageFor(model => model.ID)</p>
+
+        if (ViewBag.ErrorRegister != null)
+        {
+            <p>@ViewBag.ErrorRegister</p>
+        }
+
+        <p>@Html.LabelFor(model => model.NameUser)</p>
+        <p>@Html.EditorFor(model => model.NameUser)</p>
+        <p>@Html.ValidationMessageFor(model => model.NameUser)</p>
+
+        <p>@Html.LabelFor(model => model.RoleUser)</p>
+        <p>@Html.EditorFor(model => model.RoleUser)</p>
+        <p>@Html.ValidationMessageFor(model => model.RoleUser)</p>
+
+        <p>@Html.LabelFor(model => Model.PasswordUser)</p>
+        <p>@Html.PasswordFor(model => model.PasswordUser)</p>
+        <p>@Html.ValidationMessageFor(model => model.PasswordUser)</p>
+
+        <p>@Html.LabelFor(model => Model.ConfirmPass)</p>
+        <p>@Html.PasswordFor(model => model.ConfirmPass)</p>
+        <p>@Html.ValidationMessageFor(model => model.ConfirmPass)</p>
+
+        <input type="submit" value="RegisterAdmin" class="btn btn-primary" />
+
+        <div>
+            <p>Nếu đã có tài khoản, xin hãy bấm vào đây @Html.ActionLink("Đăng Nhập", "Index")</p>
+        </div>
+    }
+</div>
+

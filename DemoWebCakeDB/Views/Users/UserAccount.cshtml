@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "UserAccount";
+    Layout = "~/Views/Shared/UsersLayout.cshtml";
+}
+
+<h2>UserAccount</h2>
+
+@if (Session["UserID"] != null)
+{
+    <p>Welcome, @Session["UserName"]!</p>
+    <p>User ID: @Session["PhoneCus"]</p>
+    <!-- Hiển thị các thông tin tài khoản khác -->
+
+    <!-- Nút đăng xuất -->
+    <a href="@Url.Action("LogOut", "Users")">Log Out</a>
+}
+else
+{
+    <p>User not logged in.</p>
+}

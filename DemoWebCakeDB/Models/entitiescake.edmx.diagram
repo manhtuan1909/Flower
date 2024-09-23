@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ddbe4cfe13fa4a0bae70fe51fa86e73c" Name="Diagram1">
+        <EntityTypeShape EntityType="QLCakeModel.AdminUser" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCakeModel.Category" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCakeModel.Customer" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCakeModel.OrderDetail" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCakeModel.OrderPro" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCakeModel.Product" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCakeModel.sysdiagram" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCakeModel.Voucher" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="QLCakeModel.FK__Products__Catego__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCakeModel.FK__OrderPros__IDCus__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCakeModel.FK__OrderDeta__IDOrd__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCakeModel.FK__OrderDeta__IDPro__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCakeModel.FK__Vouchers__IDProd__44FF419A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

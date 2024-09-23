@@ -1,0 +1,11 @@
+﻿@model IEnumerable<DemoWebCakeDB.Models.Category>
+<div>
+    <ul class="list-group">
+        @foreach (var item in Model)
+        {
+            @Html.ActionLink(item.NameCate, "GetProductsByCateId", "CustomerProducts", new { id = item.CategoryId }, new
+            { @class = "list-group-item" })
+
+        }
+    </ul>
+</div>
